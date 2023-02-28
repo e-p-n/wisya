@@ -726,11 +726,27 @@
             <div class="avatar">
               <img src="./src/img/tom.png" alt="Tom Impala" />
             </div>
-            <div class="chat_content" id="message1">
+            <div class="chat_content">
               <p class="user">
-                Tom Impala <span class="time">11:37pm – March 6, 2023</span>
+                Tom Impala <span class="time">10:12am – March 6, 2023</span>
+              </p>
+              <p class="message">Good morning dear.</p>
+              <p class="message" id="message1">&nbsp;</p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>&nbsp; March 10, 2023 &nbsp;</legend>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">11:37pm – March 10, 2023</span>
               </p>
               <p class="message">I miss you.</p>
+              <p class="message" id="message2">&nbsp;</p>
             </div>
           </div>
         </fieldset>
@@ -763,11 +779,12 @@
             <div class="avatar">
               <img src="./src/img/tom.png" alt="Tom Impala" />
             </div>
-            <div class="chat_content" id="message2">
+            <div class="chat_content">
               <p class="user">
                 Tom Impala <span class="time">1:03pm – March 20, 2023</span>
               </p>
               <p class="message">Lily?</p>
+              <p class="message" id="message3">&nbsp;</p>
             </div>
           </div>
         </fieldset>
@@ -782,15 +799,17 @@
       var input = document.getElementById("txtInput");
 
       // Execute a function when the user presses a key on the keyboard
-      let noPressed = 1;
       input.addEventListener("keypress", function (event) {
+        let noPressed = 1;
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Enter") {
+          if (input.value == "I miss you.") {
+            noPressed = 2;
+          } else if (input.value == "Lily?") {
+            noPressed = 3;
+          }
           input.value = "";
           document.getElementById("message" + noPressed).scrollIntoView(false);
-          if (noPressed < 3) {
-            noPressed++;
-          }
         }
       });
     </script>

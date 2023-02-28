@@ -142,13 +142,12 @@ body {
 }
 
 .direct_message {
-  margin-top: 15px;
-  padding: 0 20px;
+  padding: 15px 20px 0;
   width: 100%;
   background-image: url(../img/DMs.svg);
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: 6px;
+  background-position-y: 21px;
   background-size: 83px;
   color: white;
   height: calc(100vh - var(--bottom_item_height) - var(--menu_holder_height));

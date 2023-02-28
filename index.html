@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <link rel="icon" href="./src/img/chatbox-logo.svg" type="image/svg+xml" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +14,7 @@
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
 
-    <title>chatbox</title>
+    <title>CHATBOX</title>
   </head>
   <body>
     <div class="icon_dock">
@@ -31,6 +33,12 @@
       </div>
       <div class="icon_highlighted">
         <div class="icon_dot low"></div>
+        <div class="icon_holder movie">
+          <img src="./src/img/movie.svg" alt="chatbox" />
+        </div>
+      </div>
+      <div class="icon_highlighted">
+        <div class="icon_dot low"></div>
         <div class="icon_holder ampd">
           <img src="./src/img/ampd.svg" alt="chatbox" />
         </div>
@@ -45,13 +53,15 @@
 
     <!-- Menu Bar-->
     <div class="menu_bar">
-      <div class="menu_item">
-        <img src="./src/img/friends.svg" alt="" />
-        Friends
-      </div>
-      <div class="menu_item">
-        <img src="./src/img/target.svg" alt="" />
-        Target
+      <div class="menu_holder">
+        <div class="menu_item">
+          <img src="./src/img/friends.svg" alt="" />
+          Friends
+        </div>
+        <div class="menu_item">
+          <img src="./src/img/target.svg" alt="" />
+          Target
+        </div>
       </div>
 
       <div class="direct_message">
@@ -73,533 +83,643 @@
           <p>Cantor</p>
         </div>
       </div>
+
+      <div class="user_area"></div>
     </div>
 
     <!-- Chat Area -->
     <div class="chat_area">
       <div class="chat_holder">
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
-          </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:45pm – January 20, 2023</span>
-            </p>
-            <p class="message">Hi!</p>
-          </div>
+        <div class="chat_header">
+          <img src="./src/img/lily.png" alt="" />
+          <div class="offline"></div>
+          <h2>Rosebud</h2>
+          <p>Start of DM history with <strong>@Rosebud</strong></p>
         </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+        <fieldset>
+          <legend>&nbsp; January 8, 2023 &nbsp;</legend>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:45pm – January 8, 2023</span>
+              </p>
+              <p class="message">Hi!</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:45pm – January 20, 2023</span>
-            </p>
-            <p class="message">hey</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:45pm – January 8, 2023</span>
+              </p>
+              <p class="message">hey</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:45pm – January 20, 2023</span>
-            </p>
-            <p class="message">
-              Sorry, you just seemed cool so I wanted to say hi.
-            </p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:45pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                Sorry, you just seemed cool so I wanted to say hi.
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:46pm – January 20, 2023</span>
-            </p>
-            <p class="message">thanks</p>
-            <p class="message">you’re friends with Jennie right?</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:46pm – January 8, 2023</span>
+              </p>
+              <p class="message">thanks</p>
+              <p class="message">you’re friends with Jennie right?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:46pm – January 20, 2023</span>
-            </p>
-            <p class="message">Yeah she’s sort of like my best friend.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:46pm – January 8, 2023</span>
+              </p>
+              <p class="message">Yeah she’s sort of like my best friend.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:46pm – January 20, 2023</span>
-            </p>
-            <p class="message">cool</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:46pm – January 8, 2023</span>
+              </p>
+              <p class="message">cool</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:46pm – January 20, 2023</span>
-            </p>
-            <p class="message">How long have you two known each other?</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:46pm – January 8, 2023</span>
+              </p>
+              <p class="message">How long have you two known each other?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:46pm – January 20, 2023</span>
-            </p>
-            <p class="message">about a year she’s cool</p>
-            <p class="message">sorry am I being awkward?</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:46pm – January 8, 2023</span>
+              </p>
+              <p class="message">about a year she’s cool</p>
+              <p class="message">sorry am I being awkward?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:46pm – January 20, 2023</span>
-            </p>
-            <p class="message">Not at all. Honestly I thought I was.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:46pm – January 8, 2023</span>
+              </p>
+              <p class="message">Not at all. Honestly I thought I was.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:46pm – January 20, 2023</span>
-            </p>
-            <p class="message">your fine</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:46pm – January 8, 2023</span>
+              </p>
+              <p class="message">your fine</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">cool</p>
 
-            <p class="message">so I guess you’re into movies?</p>
-          </div>
-        </div>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">cool</p>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+              <p class="message">so I guess you’re into movies?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">yes</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">yes</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">
-              I haven’t seen too many, Jennie just kind of forced me into this
-              server. You got any good recommendations?
-            </p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                I haven’t seen too many, Jennie just kind of forced me into this
+                server. You got any good recommendations?
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">wdym by haven’t seen too many</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">wdym by haven’t seen too many</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">Well, I’ve seen Star Wars.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">Well, I’ve seen Star Wars.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">everyone has, you got any favorite films?</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">everyone has, you got any favorite films?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">I absolutely love Scott Pilgrim.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">I absolutely love Scott Pilgrim.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">Who’s your favorite director?</p>
-          </div>
-        </div>
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
-          </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">
-              I don’t really know enough to have one, I mean of course I know
-              directors like Kubrick and what not.
-            </p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">Who’s your favorite director?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:47pm – January 20, 2023</span>
-            </p>
-            <p class="message">would you watch any older films?</p>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                I don’t really know enough to have one, I mean of course I know
+                directors like Kubrick and what not.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:47pm – January 8, 2023</span>
+              </p>
+              <p class="message">would you watch any older films?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:48pm – January 20, 2023</span>
-            </p>
-            <p class="message">
-              Yes, I haven’t really seen anything pre-1950s except for like
-              Disney stuff. I’d like to watch some more.
-            </p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:48pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                Yes, I haven’t really seen anything pre-1950s except for like
+                Disney stuff. I’d like to watch some more.
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:48pm – January 20, 2023</span>
-            </p>
-            <p class="message">you seen Citizen Kane?</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:48pm – January 8, 2023</span>
+              </p>
+              <p class="message">you seen Citizen Kane?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:48pm – January 20, 2023</span>
-            </p>
-            <p class="message">No, but I’ve heard it’s the best film ever.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:48pm – January 8, 2023</span>
+              </p>
+              <p class="message">No, but I’ve heard it’s the best film ever.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">6:48pm – January 20, 2023</span>
-            </p>
-            <p class="message">Watch it!</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">6:48pm – January 8, 2023</span>
+              </p>
+              <p class="message">Watch it!</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">6:48pm – January 20, 2023</span>
-            </p>
-            <p class="message">Okay :)</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">6:48pm – January 8, 2023</span>
+              </p>
+              <p class="message">Okay :)</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:52pm – January 20, 2023</span>
-            </p>
-            <p class="message">Oh my god that was so amazing.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:52pm – January 8, 2023</span>
+              </p>
+              <p class="message">Oh my god that was so amazing.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:52pm – January 20, 2023</span>
-            </p>
-            <p class="message">im glad you liked it its one of my favorites</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:52pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                im glad you liked it its one of my favorites
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:52pm – January 20, 2023</span>
-            </p>
-            <p class="message">You got good taste.</p>
 
-            <p class="message">
-              Ah I get it, your username’s a Citizen Kane reference.
-            </p>
-          </div>
-        </div>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:52pm – January 8, 2023</span>
+              </p>
+              <p class="message">You got good taste.</p>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+              <p class="message">
+                Ah I get it, your username’s a Citizen Kane reference.
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:53pm – January 20, 2023</span>
-            </p>
-            <p class="message">yep</p>
-          </div>
-        </div>
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
-          </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:53pm – January 20, 2023</span>
-            </p>
-            <p class="message">You got any other movie recommendations?</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:53pm – January 8, 2023</span>
+              </p>
+              <p class="message">yep</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:53pm – January 20, 2023</span>
-            </p>
-            <p class="message">
-              would you be interested in watching any foreign films?
-            </p>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:53pm – January 8, 2023</span>
+              </p>
+              <p class="message">You got any other movie recommendations?</p>
+            </div>
           </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:53pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                would you be interested in watching any foreign films?
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:54pm – January 20, 2023</span>
-            </p>
-            <p class="message">
-              absolutely, my friend Eli showed me a few Japanese films, I really
-              liked this one trilogy called the Human Condition.
-            </p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:54pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                absolutely, my friend Eli showed me a few Japanese films, I
+                really liked this one trilogy called the Human Condition.
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:54pm – January 20, 2023</span>
-            </p>
-            <p class="message">how about Hong Kong cinema?</p>
-          </div>
-        </div>
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
-          </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:54pm – January 20, 2023</span>
-            </p>
-            <p class="message">Some John Woo, not much else.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:54pm – January 8, 2023</span>
+              </p>
+              <p class="message">how about Hong Kong cinema?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:54pm – January 20, 2023</span>
-            </p>
-            <p class="message">have you seen Chungking Express?</p>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:54pm – January 8, 2023</span>
+              </p>
+              <p class="message">Some John Woo, not much else.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:54pm – January 8, 2023</span>
+              </p>
+              <p class="message">have you seen Chungking Express?</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:54pm – January 20, 2023</span>
-            </p>
-            <p class="message">I haven’t heard of it.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:54pm – January 8, 2023</span>
+              </p>
+              <p class="message">I haven’t heard of it.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:55pm – January 20, 2023</span>
-            </p>
-            <p class="message">Wong-Kar Wai, you should check it out.</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:55pm – January 8, 2023</span>
+              </p>
+              <p class="message">Wong-Kar Wai, you should check it out.</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:55pm – January 20, 2023</span>
-            </p>
-            <p class="message">Alright!</p>
 
-            <p class="message">It’s not on any streaming :(</p>
-          </div>
-        </div>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:55pm – January 8, 2023</span>
+              </p>
+              <p class="message">Alright!</p>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+              <p class="message">It’s not on any streaming :(</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:55pm – January 20, 2023</span>
-            </p>
-            <p class="message">
-              i can stream it for you and we could watch it together if you’d
-              like?
-            </p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/tom.png" alt="Tom Impala" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:55pm – January 8, 2023</span>
+              </p>
+              <p class="message">
+                i can stream it for you and we could watch it together if you’d
+                like?
+              </p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Tom Impala <span class="time">8:55pm – January 20, 2023</span>
-            </p>
-            <p class="message">Yeah, that’d be amazing</p>
-          </div>
-        </div>
 
-        <div class="chat_entry">
-          <div class="avatar">
-            <img src="./src/img/lily.png" alt="Rosebud" />
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">8:55pm – January 8, 2023</span>
+              </p>
+              <p class="message">Yeah, that’d be amazing</p>
+            </div>
           </div>
-          <div class="chat_content">
-            <p class="user">
-              Rosebud <span class="time">8:55pm – January 20, 2023</span>
-            </p>
-            <p class="message">cool</p>
-          </div>
-        </div>
 
-        <p class="message">
-          <strong style="font-weight: 700">Rosebud</strong> started a call that
-          lasted 4 hours
-        </p>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">8:55pm – January 8, 2023</span>
+              </p>
+              <p class="message">cool</p>
+            </div>
+          </div>
+
+          <div class="chat_entry" style="align-items: center">
+            <div class="avatar">
+              <img src="./src/img/phone.svg" alt="Phone" />
+            </div>
+            <div class="chat_content" style="color: var(--text-light-grey)">
+              <p class="message">Rosebud started a call that lasted 4 hours</p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>&nbsp; February 6, 2023 &nbsp;</legend>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">3:23pm – February 6, 2023</span>
+              </p>
+              <p class="message">Hey…</p>
+            </div>
+          </div>
+
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">3:23pm – February 6, 2023</span>
+              </p>
+              <p class="message">hi</p>
+              <p class="message">everything okay?</p>
+            </div>
+          </div>
+
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">3:24pm – February 6, 2023</span>
+              </p>
+              <p class="message">
+                Jennie and I got in a fight, I don’t know if we’re ever gonna be
+                friends again.
+              </p>
+            </div>
+          </div>
+
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">3:24pm – February 6, 2023</span>
+              </p>
+              <p class="message">oh no im so sorry</p>
+              <p class="message">
+                if it makes you feel better im still your friend.
+              </p>
+            </div>
+          </div>
+
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">3:24pm – February 6, 2023</span>
+              </p>
+              <p class="message">
+                Thanks, honestly at this point, you’re pretty much my best
+                friend now.
+              </p>
+            </div>
+          </div>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">3:23pm – January 8, 2023</span>
+              </p>
+              <p class="message">aw thanks.</p>
+            </div>
+          </div>
+
+          <div class="chat_entry" style="align-items: center">
+            <div class="avatar">
+              <img src="./src/img/phone.svg" alt="Phone" />
+            </div>
+            <div class="chat_content" style="color: var(--text-light-grey)">
+              <p class="message">Tom started a call that lasted 2 hours</p>
+            </div>
+          </div>
+        </fieldset>
       </div>
       <div class="chat_field">
         <input type="text" placeholder="Message" />

@@ -230,6 +230,7 @@ fieldset {
 legend {
   text-align: center;
   color: var(--text-light-grey);
+  font-size: 0.9em;
 }
 p.user {
   font-size: 1em;

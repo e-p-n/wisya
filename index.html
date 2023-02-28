@@ -720,10 +720,79 @@
             </div>
           </div>
         </fieldset>
+        <fieldset>
+          <legend>&nbsp; March 6, 2023 &nbsp;</legend>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content" id="message1">
+              <p class="user">
+                Tom Impala <span class="time">11:37pm – March 6, 2023</span>
+              </p>
+              <p class="message">I miss you.</p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>&nbsp; March 20, 2023 &nbsp;</legend>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/lily.png" alt="Rosebud" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Rosebud <span class="time">1:00pm – March 20, 2023</span>
+              </p>
+              <p class="message">Happy Birthday.</p>
+            </div>
+          </div>
+
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content">
+              <p class="user">
+                Tom Impala <span class="time">1:00pm – March 20, 2023</span>
+              </p>
+              <p class="message">Lily? I missed you so much</p>
+            </div>
+          </div>
+          <div class="chat_entry">
+            <div class="avatar">
+              <img src="./src/img/tom.png" alt="Tom Impala" />
+            </div>
+            <div class="chat_content" id="message2">
+              <p class="user">
+                Tom Impala <span class="time">1:03pm – March 20, 2023</span>
+              </p>
+              <p class="message">Lily?</p>
+            </div>
+          </div>
+        </fieldset>
       </div>
       <div class="chat_field">
-        <input type="text" placeholder="Message" />
+        <input type="text" placeholder="Message" id="txtInput" />
       </div>
     </div>
+
+    <script>
+      // Get the input field
+      var input = document.getElementById("txtInput");
+
+      // Execute a function when the user presses a key on the keyboard
+      let noPressed = 1;
+      input.addEventListener("keypress", function (event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+          input.value = "";
+          document.getElementById("message" + noPressed).scrollIntoView(false);
+          if (noPressed < 3) {
+            noPressed++;
+          }
+        }
+      });
+    </script>
   </body>
 </html>

@@ -64,12 +64,18 @@ body {
 
 .icon_holder,
 .icon_dot {
-  width: 40px !important;
-  height: 40px !important;
+  width: 40px;
+  height: 40px;
   transform: rotate(45deg);
   background-color: white;
   border-radius: 5px;
   padding: 0;
+}
+
+.icon_small {
+  width: 25px !important;
+  height: 25px !important;
+  outline: solid 2px var(--text-light-grey);
 }
 
 .icon_dot {
@@ -110,7 +116,8 @@ body {
 }
 
 .movie img {
-  width: 120%;
+  border-radius: 0 !important;
+  width: 120% !important;
 }
 
 .menu_bar {
@@ -155,6 +162,7 @@ body {
 
 .dm_friend img {
   width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -167,10 +175,48 @@ body {
 .user_area {
   height: var(--bottom_item_height);
   background-color: var(--second);
-  padding: 20px;
+  padding: 15px 10px;
   display: flex;
+  align-items: center;
+  gap: 10px;
+  background-image: url(../img/user_icons.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 90px;
 }
 
+.user_area img {
+  height: 35px;
+  border-radius: 50%;
+}
+.user_details {
+  font-size: 0.75rem;
+  color: var(--text-light-grey);
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -25px;
+}
+.user_id {
+  font-weight: 800;
+  margin: 0 0 3px;
+  padding: 0;
+  line-height: 1em;
+}
+.user_no {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+.user_status {
+  width: 12px !important;
+  height: 12px !important;
+  border-width: 3px !important;
+  left: -45px !important;
+  top: 10px !important;
+}
 .chat_area {
   display: flex;
   flex-direction: column;
@@ -185,14 +231,14 @@ body {
 .online,
 .offline,
 .away {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 4px solid;
   outline: var(--grey-light) 2px solid;
-  border-radius: 6px;
+  border-radius: 20%;
   position: relative;
-  top: -25px;
-  left: 2px;
+  top: -21px;
+  left: 6px;
   transform: rotate(45deg);
 }
 
@@ -221,6 +267,36 @@ body {
   border-radius: 50%;
 }
 
+.chat_info_line {
+  display: flex;
+  gap: 15px;
+  color: var(--text-light-grey);
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.btn_safe {
+  background-color: var(--first);
+}
+
+.btn_caution {
+  background-color: var(--grey-med);
+}
+.btn_warning {
+  background-color: var(--warning);
+}
+
+button:hover {
+  outline: var(--text-light-grey) 1px solid;
+}
 fieldset {
   border-left: none;
   border-right: none;
@@ -276,6 +352,9 @@ p.message {
 .chat_entry {
   display: flex;
   margin-bottom: 15px;
+}
+.new_entry {
+  margin-bottom: 0;
 }
 .avatar {
   width: 40px;

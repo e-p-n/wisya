@@ -142,13 +142,14 @@ body {
 }
 
 .direct_message {
+  margin-top: 15px;
   padding: 0 20px;
   width: 100%;
   background-image: url(../img/DMs.svg);
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: 4px;
-  background-size: 150px;
+  background-position-y: 6px;
+  background-size: 83px;
   color: white;
   height: calc(100vh - var(--bottom_item_height) - var(--menu_holder_height));
 }
@@ -279,9 +280,9 @@ button {
   border: none;
   border-radius: 8px;
   color: white;
-  padding: 10px;
+  padding: 8px 15px;
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 .btn_safe {
   background-color: var(--first);

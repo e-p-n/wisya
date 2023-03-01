@@ -101,6 +101,16 @@
 
     <!-- Chat Area -->
     <div class="chat_area">
+      <div class="call_holder">
+        <div class="call_avatars">
+          <img id="lily" src="./src/img/lily.png" />
+          <img id="tom" src="./src/img/tom.png" />
+        </div>
+
+        <div class="call_buttons">
+          <a href="index.html"><img src="./src/img/call_icons.svg" alt="" /></a>
+        </div>
+      </div>
       <div class="chat_holder">
         <div class="option_links">
           <a href="call.html"><img src="./src/img/phone.svg" /></a>
@@ -811,21 +821,23 @@
     </div>
 
     <script>
-      // Get the input field
-      var input = document.getElementById("txtInput");
+      function addGlow(icon, icon2) {
+        const element = document.getElementById(icon);
+        const element2 = document.getElementById(icon2);
+        if (element.classList.contains("glow")) {
+          element.classList.remove("glow");
+        } else {
+          element.classList.add("glow");
+          element2.classList.remove("glow");
+        }
+      }
 
-      // Execute a function when the user presses a key on the keyboard
-      input.addEventListener("keypress", function (event) {
-        let noPressed = 1;
-        // If the user presses the "Enter" key on the keyboard
+      window.addEventListener("keypress", function (event) {
+        console.log("pressed");
         if (event.key === "Enter") {
-          if (input.value == "I miss you.") {
-            noPressed = 2;
-          } else if (input.value == "Lily?") {
-            noPressed = 3;
-          }
-          input.value = "";
-          document.getElementById("message" + noPressed).scrollIntoView(false);
+          addGlow("lily", "tom");
+        } else if (event.key == "/") {
+          addGlow("tom", "lily");
         }
       });
     </script>

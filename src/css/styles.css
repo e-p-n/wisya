@@ -213,7 +213,8 @@ body {
 .user_status {
   width: 12px !important;
   height: 12px !important;
-  border-width: 3px !important;
+  outline-color: var(--second) !important;
+  border-width: 2px !important;
   left: -45px !important;
   top: 10px !important;
 }
@@ -227,6 +228,51 @@ body {
   height: calc(100vh - 65px);
   width: 100%;
   overflow: auto;
+}
+.call_holder {
+  background-color: var(--grey-dark);
+  padding-bottom: 45px;
+}
+.call_avatars,
+.call_buttons {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+.call_avatars img {
+  width: 150px;
+  border: solid 2px var(--dark);
+  border-radius: 50%;
+}
+
+.glow {
+  box-shadow: 0 0 20px 5px var(--bright);
+}
+
+.call_buttons img {
+  width: 280px;
+}
+
+.option_links {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 8px 16px 8px 8px;
+  border-radius: 8px 0 0 8px;
+  background-color: var(--grey-dark);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.option_links a {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.option_links img {
+  height: 20px;
 }
 .online,
 .offline,

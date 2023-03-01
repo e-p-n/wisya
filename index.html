@@ -997,7 +997,11 @@
             noPressed = 3;
           }
           input.value = "";
-          document.getElementById("message" + noPressed).scrollIntoView(false);
+          setTimeout(() => {
+            document
+              .getElementById("message" + noPressed)
+              .scrollIntoView(false);
+          }, 500);
         }
       });
     </script>

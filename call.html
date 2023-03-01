@@ -821,23 +821,24 @@
     </div>
 
     <script>
-      function addGlow(icon, icon2) {
+      //   function addGlow(icon, icon2) {
+      function addGlow(icon) {
         const element = document.getElementById(icon);
-        const element2 = document.getElementById(icon2);
+        // const element2 = document.getElementById(icon2);
         if (element.classList.contains("glow")) {
           element.classList.remove("glow");
         } else {
           element.classList.add("glow");
-          element2.classList.remove("glow");
+          //   element2.classList.remove("glow");
         }
       }
 
       window.addEventListener("keypress", function (event) {
         console.log("pressed");
         if (event.key === "Enter") {
-          addGlow("lily", "tom");
+          addGlow("lily");
         } else if (event.key == "/") {
-          addGlow("tom", "lily");
+          addGlow("tom");
         }
       });
     </script>

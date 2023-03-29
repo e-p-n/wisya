@@ -20,8 +20,6 @@
   --text: var(--dark);
   --text-light: #fff;
   --text-light-grey: #aaa;
-  --bottom_item_height: 65px;
-  --menu_holder_height: 90px;
 }
 
 a {

@@ -36,7 +36,9 @@
       <div class="icon_highlighted">
         <div class="icon_dot low"></div>
         <div class="icon_holder movie">
-          <img src="./src/img/movie.svg" alt="chatbox" />
+          <a href="./movie.html"
+            ><img src="./src/img/movie.svg" alt="chatbox"
+          /></a>
         </div>
       </div>
       <div class="icon_highlighted">
@@ -68,7 +70,10 @@
 
       <div class="direct_message">
         Message Boxes
-
+        <div class="dm_friend" style="margin-top: 18px">
+          <img src="./src/img/lily.png" alt="" />
+          <p>Rosebud</p>
+        </div>
         <div class="dm_friend">
           <img src="./src/img/mike.svg" alt="" />
           <p>Mike Calahan</p>
@@ -100,48 +105,32 @@
 
     <!-- Chat Area -->
     <div class="chat_area">
-      <div class="call_holder">
-        <div class="call_avatars">
-          <img id="mike" style="background-color: #34C6F4;"
-          src="./src/img/mike.svg" / >
-          <img id="tom" src="./src/img/tom.png" />
-        </div>
-
-        <div class="call_buttons">
-          <a href="index.html"><img src="./src/img/call_icons.svg" alt="" /></a>
-        </div>
-      </div>
       <div class="chat_holder">
         <div class="option_links">
-          <a href="call.html"><img src="./src/img/phone.svg" /></a>
+          <a href="call-mike.html"><img src="./src/img/phone.svg" /></a>
           <img src="./src/img/camera.svg" />
           <img src="./src/img/question.svg" />
         </div>
         <div class="chat_header">
-          <img src="./src/img/mike.svg" alt="" />
+          <img
+            src="./src/img/mike.svg"
+            alt=""
+            style="background-color: #34c6f4"
+          />
           <div class="offline"></div>
           <h2>Mike Calahan</h2>
-          <p>Start of message box history with <strong>@Rosebud</strong></p>
           <div class="chat_info_line">
             <div class="icon_holder movie icon_small">
               <img src="./src/img/movie.svg" alt="chatbox" />
             </div>
             1 mutual chatbox.
+            <!-- <button class="btn_safe">Friend</button>
+            <button class="btn_caution">Block</button>
+            <button class="btn_warning">Spam</button> -->
           </div>
         </div>
 
-        <fieldset>
-          <legend>&nbsp; March 6, 2023 &nbsp;</legend>
-
-          <div class="chat_entry" style="align-items: center">
-            <div class="avatar">
-              <img src="./src/img/phone.svg" alt="Phone" />
-            </div>
-            <div class="chat_content" style="color: var(--text-light-grey)">
-              <p class="message">Tom Impala started a call.</p>
-            </div>
-          </div>
-        </fieldset>
+        <fieldset></fieldset>
       </div>
       <div class="chat_field">
         <input type="text" placeholder="Message" id="txtInput" />
@@ -149,24 +138,25 @@
     </div>
 
     <script>
-      //   function addGlow(icon, icon2) {
-      function addGlow(icon) {
-        const element = document.getElementById(icon);
-        // const element2 = document.getElementById(icon2);
-        if (element.classList.contains("glow")) {
-          element.classList.remove("glow");
-        } else {
-          element.classList.add("glow");
-          //   element2.classList.remove("glow");
-        }
-      }
+      // Get the input field
+      var input = document.getElementById("txtInput");
 
-      window.addEventListener("keypress", function (event) {
-        console.log("pressed");
+      // Execute a function when the user presses a key on the keyboard
+      input.addEventListener("keypress", function (event) {
+        let noPressed = 1;
+        // If the user presses the "Enter" key on the keyboard
         if (event.key === "Enter") {
-          addGlow("mike");
-        } else if (event.key == "/") {
-          addGlow("tom");
+          if (input.value == "I miss you.") {
+            noPressed = 2;
+          } else if (input.value == "Lily?") {
+            noPressed = 3;
+          }
+          input.value = "";
+          setTimeout(() => {
+            document
+              .getElementById("message" + noPressed)
+              .scrollIntoView(false);
+          }, 500);
         }
       });
     </script>

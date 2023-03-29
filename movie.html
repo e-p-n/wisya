@@ -90,11 +90,6 @@
     <!-- Chat Area -->
     <div class="chat_area">
       <div class="chat_holder">
-        <div class="option_links">
-          <a href="call-mike.html"><img src="./src/img/phone.svg" /></a>
-          <img src="./src/img/camera.svg" />
-          <img src="./src/img/question.svg" />
-        </div>
         <fieldset>
           <legend>&nbsp; March 4, 2023 &nbsp;</legend>
           <div class="chat_entry">
@@ -289,7 +284,9 @@
           </div>
           <div class="chat_entry">
             <div class="avatar">
-              <img src="./src/img/mike.svg" alt="Mike" />
+              <a href="mike-profile.html"
+                ><img src="./src/img/mike.svg" alt="Mike"
+              /></a>
             </div>
             <div class="chat_content">
               <p class="user">Mike <span class="time">12:17pm</span></p>
@@ -310,11 +307,11 @@
 
       // Execute a function when the user presses a key on the keyboard
       input.addEventListener("keypress", function (event) {
-        let noPressed = 1;
+        let noPressed = 2;
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Enter") {
-          if (input.value == "???????????") {
-            noPressed = 2;
+          if (input.value == "") {
+            noPressed = 1;
           }
           input.value = "";
           setTimeout(() => {

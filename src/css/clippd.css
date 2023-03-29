@@ -23,7 +23,13 @@
   --bottom_item_height: 65px;
   --menu_holder_height: 90px;
 }
+button {
+  cursor: pointer;
+}
 
+button:hover {
+  outline: none;
+}
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
@@ -123,10 +129,42 @@ nav ul li {
   margin-top: 15px;
 }
 .nav_area {
-  width: 160px;
+  width: 220px;
+}
+h5 {
+  padding: 0 0 6px 20px;
+  margin-bottom: 0;
+}
+.suggested,
+.explore {
+  width: 100%;
+  font-size: 0.7em;
+  color: var(--dark);
+  padding: 12px 0 0 20px;
+  display: flex;
+  line-height: 1.1em;
+  margin: 0;
+}
+.suggested img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--third);
+  margin-right: 5px;
+}
+.explore {
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.explore li {
+  border: 1px solid var(--second);
+  border-radius: 25px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  margin: 0 5px 12px 0;
 }
 .content {
-  width: calc(100vw - 160px);
+  width: calc(100vw - 220px);
   display: flex;
   flex-direction: column;
   padding-left: 40px;
@@ -144,6 +182,9 @@ nav ul li {
 .user_info button {
   background-color: var(--first);
   border-radius: 25px;
+}
+.user_info button:hover {
+  background-color: var(--bright);
 }
 .user_stats {
   margin-top: 15px;
@@ -460,9 +501,6 @@ button {
   background-color: var(--warning);
 }
 
-button:hover {
-  outline: var(--text-light-grey) 1px solid;
-}
 fieldset {
   border-left: none;
   border-right: none;
@@ -534,4 +572,39 @@ p.message {
 .chat_content {
   flex-direction: column;
   margin-left: 10px;
+}
+
+.pop-up-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up {
+  display: block;
+  width: 640px;
+  background-color: var(--grey-dark);
+  color: white;
+  border: 3px solid var(--third);
+  padding: 25px;
+  filter: drop-shadow(10px 10px 10px var(--grey-dark));
+}
+.button_holder {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.pop-up button {
+  background-color: var(--third);
+  font-size: 1.2em;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+.pop-up button:hover {
+  background-color: #a42a25;
 }

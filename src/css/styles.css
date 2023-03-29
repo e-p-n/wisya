@@ -366,6 +366,9 @@ p.user {
   color: var(--text-light-grey);
   margin-left: 5px;
 }
+a {
+  color: var(--bright);
+}
 p.message {
   margin: 0;
   padding: 0;

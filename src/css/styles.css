@@ -37,6 +37,12 @@ body {
   line-height: 1.4rem;
 }
 
+h5 {
+  padding: 0;
+  margin: 15px 0 3px;
+  color: var(--text-light-grey);
+}
+
 .icon_dock {
   height: 100%;
   background-color: var(--dark);
@@ -123,12 +129,14 @@ body {
 .menu_bar {
   width: 275px;
   background-color: var(--grey-med);
-  height: 100%;
   color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu_holder {
   padding: 20px;
-  height: var(--menu_holder_height);
 }
 .menu_item {
   display: flex;
@@ -417,4 +425,10 @@ p.message {
 .chat_content {
   flex-direction: column;
   margin-left: 10px;
+}
+
+.server_item {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0 0 0 8px;
 }

@@ -190,7 +190,15 @@ h5 {
   margin-top: 15px;
   color: var(--dark);
 }
-
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+h3,
+p {
+  padding: 0;
+  margin: 8px 0 0 0;
+}
 .vid_clip {
   width: 220px !important;
   height: 280px;

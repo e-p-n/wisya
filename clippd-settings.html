@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="./src/img/chatbox-logo.svg" type="image/svg+xml" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./src/css/clippd.css" />
+
+    <title>clippd.</title>
+  </head>
+  <body>
+    <!-- Top Nav -->
+    <div class="menu_bar">
+      <div class="logo">
+        <img src="./src/img/clippd.svg" alt="clippd." />
+      </div>
+      <div class="search">
+        <input type="text" />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="action_buttons">
+        <button class="upload">
+          Upload &nbsp;<i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+        <div class="avatar">
+          <img src="./src/img/tom.png" alt="Tom Impala" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Area -->
+    <div class="main">
+      <!-- Nav -->
+      <div class="nav_area">
+        <nav>
+          <ul>
+            <li>Personal Info</li>
+            <li>Privacy</li>
+            <li>Password</li>
+            <li>Notifications</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h2>Settings</h2>
+        <h3>Privacy</h3>
+        <p style="margin-top: 12px">
+          Public <input type="radio" name="public-private" checked /> Private
+          <input type="radio" name="public-private" />
+        </p>
+        <p style="font-size: 0.9em">
+          People already following you will not be affected by the changes you
+          make.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Get the input field
+      var toggle = document.getElementById("pop-up-holder");
+      function togglePopUp(show) {
+        toggle.style.display = show;
+      }
+    </script>
+  </body>
+</html>

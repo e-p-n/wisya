@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="./src/img/chatbox-logo.svg" type="image/svg+xml" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./src/css/clippd.css" />
+
+    <title>clippd.</title>
+  </head>
+  <body>
+    <!-- Top Nav -->
+    <div class="menu_bar">
+      <div class="logo">
+        <img src="./src/img/clippd.svg" alt="clippd." />
+      </div>
+      <div class="search">
+        <input type="text" />
+        <button onclick="window.location='clippd-search.html'">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="action_buttons">
+        <button class="upload">
+          Upload &nbsp;<i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+        <div class="avatar">
+          <img src="./src/img/tom.png" alt="Tom Impala" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Area -->
+    <div class="main">
+      <!-- Nav -->
+      <div class="nav_area">
+        <nav>
+          <ul>
+            <li><i class="fa-regular fa-hands-holding-circle"></i>For You</li>
+            <li><i class="fa-solid fa-people-group"></i>Following</li>
+            <li><i class="fa-solid fa-film-simple"></i>Live</li>
+          </ul>
+        </nav>
+        <h5>Suggested Accounts</h5>
+
+        <div class="suggested">
+          <img src="src/img/for clippd - 6 of 30.jpeg" />
+          <p>
+            <strong>link432791</strong><br />
+            Video game nerd
+          </p>
+        </div>
+        <div class="suggested">
+          <img src="src/img/blossom.svg" />
+          <p>
+            <strong>bloom-eternal</strong><br />
+            Nature's philosopher
+          </p>
+        </div>
+        <div class="suggested">
+          <img src="src/img/jennie.png" />
+          <p>
+            <strong>Shadowcat</strong><br />
+            Jennie
+          </p>
+        </div>
+        <div class="suggested">
+          <img src="src/img/record.svg" />
+          <p>
+            <strong>vinylking5412</strong><br />
+            Music
+          </p>
+        </div>
+        <div class="suggested">
+          <img src="src/img/for clippd - 2 of 30.jpeg" />
+          <p>
+            <strong>zeitgeist</strong><br />
+            History
+          </p>
+        </div>
+        <p
+          style="
+            color: green;
+            padding-left: 20px;
+            font-size: 0.7em;
+            line-height: 1.1em;
+          "
+        >
+          See more
+        </p>
+        <h5>Explore</h5>
+        <ul class="explore">
+          <li><i class="fa-solid fa-hashtag"></i> filmclippd</li>
+          <li><i class="fa-solid fa-hashtag"></i> politics</li>
+          <li><i class="fa-solid fa-music"></i> Papermaps</li>
+          <li><i class="fa-solid fa-hashtag"></i> astronomy</li>
+          <li><i class="fa-solid fa-hashtag"></i> indie</li>
+          <li><i class="fa-solid fa-music"></i> Whisper Gang - Doubt Me</li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="user_info">
+          <img src="./src/img/tom.png" alt="Tom" />
+          <div>
+            <h2>Tom</h2>
+            <button onclick="window.location='clippd-settings.html'">
+              Settings
+            </button>
+          </div>
+        </div>
+        <div class="user_stats">
+          <a href="clippd-following.html"><strong>1</strong> Following</a>
+          &nbsp; <strong>1</strong> Followers &nbsp; <strong>0</strong> Likes
+        </div>
+        <h2>clipps</h2>
+        <div class="clip_holder">
+          <div class="clip">
+            <div class="vid_clip">
+              <div class="inner">
+                <div
+                  style="
+                    color: white;
+                    text-align: center;
+                    padding-top: 65px;
+                    font-weight: bold;
+                  "
+                >
+                  You haven't added any clips yet. <br />Click here to start.
+                </div>
+              </div>
+            </div>
+            <div class="clip_text">
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-up-holder" id="pop-up-holder">
+      <div class="pop-up">
+        <h3>Error</h3>
+        <p>Due to this user's privacy setting you are unable to follow them.</p>
+        <div class="button_holder">
+          <button onclick="togglePopUp('none')">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get the input field
+      var toggle = document.getElementById("pop-up-holder");
+      function togglePopUp(show) {
+        toggle.style.display = show;
+      }
+    </script>
+  </body>
+</html>
